@@ -6,15 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>js-sdk使用</title>
   <link rel="stylesheet" href="css/index.css">
+  <!-- 引入 WeUI CDN 链接 -->
+  <link rel="stylesheet" href="https://res.wx.qq.com/open/libs/weui/2.3.0/weui.min.css"/>
 </head>
 
 <body>
 
   <div id="app">
     <img class="pt" src="" alt="">
-    <button class="takePhoto">拍照</button>
-    <button class="scan">扫码</button>
-    <button class="pay">支付</button>
+    <button class="takePhoto weui-btn weui-btn_primary">拍照</button>
+    <button class="scan weui-btn weui-btn_primary">扫码</button>
+    <button class="pay weui-btn weui-btn_primary">支付</button>
   </div>
 
   {{!-- 引入js-sdk --}}
