@@ -92,7 +92,7 @@
     wx.updateAppMessageShareData({ 
       title: '来黑马学前端！', // 分享标题
       desc: '前端前途无量！', // 分享描述
-      link: 'http://localhost:3000', // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+      link: 'http://localhost:3000/', // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
       imgUrl: 'http://t7.baidu.com/it/u=3616242789,1098670747&fm=79&app=86&f=JPEG?w=900&h=1350', // 分享图标
       success: function () {
         // 设置成功
@@ -104,7 +104,7 @@
 
     wx.error(function(res){
   // config信息验证失败会执行error函数，如签名过期导致验证失败，具体错误信息可以打开config的debug模式查看，也可以在返回的res参数中查看，对于SPA可以在这里更新签名。
-  console.log('error:', res)
+  console.log('错误:', res)
 });
 
   </script>
