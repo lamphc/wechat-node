@@ -22,7 +22,7 @@
   {{!-- 引入js-sdk --}}
   <script src="libs/jweixin-1.6.0.js"></script>
   <script> 
-    console.log('开始验证')
+    console.log('开始验证','{{signature}}')
     wx.config({
       debug: true, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
       appId: '{{appId}}', // 必填，公众号的唯一标识
@@ -92,7 +92,7 @@
     wx.updateAppMessageShareData({ 
       title: '来黑马学前端！', // 分享标题
       desc: '前端前途无量！', // 分享描述
-      link: 'http://localhost:8000', // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+      link: 'http://localhost:3000', // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
       imgUrl: 'http://t7.baidu.com/it/u=3616242789,1098670747&fm=79&app=86&f=JPEG?w=900&h=1350', // 分享图标
       success: function () {
         // 设置成功

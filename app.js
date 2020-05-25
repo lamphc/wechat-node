@@ -8,6 +8,8 @@ const { Wechat } = require('wechat-jssdk')
 const wx = new Wechat({
   appId: 'wxe733093faa04b8aa',
   appSecret: '24f11b6815515016170c4ffeb6977e65'
+  // appId: 'wx7cfd1bd1af42d511',
+  // appSecret: '2fae9e51b3c6e89678db2ae74cf64bc3'
 });
 
 // 创建Koa实例
@@ -17,7 +19,7 @@ const router = new Router()
 
 // 定义接口
 router.get('/check', async (ctx) => {
-  let res = await wx.jssdk.getSignature('http://localhost:8000')
+  let res = await wx.jssdk.getSignature('http://localhost:8000/')
   ctx.body = res
 })
 // 使用路由
@@ -35,7 +37,7 @@ app.use(views(__dirname + '/views', {
 
 app.use(async ctx => {
   // 获取验证信息
-  let res = await wx.jssdk.getSignature('http://localhost:8000')
+  let res = await wx.jssdk.getSignature('http://localhost:8000/')
   // 同步渲染页面并返回
   await ctx.render('index.hbs', res)
 })

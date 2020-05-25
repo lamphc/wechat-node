@@ -4,24 +4,11 @@
   },
   "globalToken": {
     "count": 1,
-    "modifyDate": "2020-05-25T09:11:32.250Z",
-    "accessToken": "33_Z3QJghY30sLIDQIcyP6jssnevELZRSUUGJGq5afImfr1rVqdBmOHt0N5I1DGM0qaEfkBlHCV4tfTO8HDvQGfPbjLPJl7rQ0RPmQqQpTFnJhoUs1dfhK8kaBLUst_z068bjl7az2QOjH-KHkrBPSdAFARFI",
+    "modifyDate": "2020-05-25T09:47:51.021Z",
+    "accessToken": "33_DNqYkkkSprHObaDSx2qBhBiTv2L4obR5RuY6Utlpg9eDC0yVwR3tvUa4a6gCV6BjzvCZ_lJ80d4JrJAgSFk9EMabHwKOSZwpoiq-ptCrwJg9XyCMbeS9cVJuM3u1SLxjFKl99596zR_xgGM9KHReABAAXH",
     "jsapi_ticket": "sM4AOVdWfPE4DxkXGEs8VGnQel_wVaRPamfhHTb2RzcJj7i3yX4RoFBJOj-zcXuQo4SYgBoxGQNYd5_fU_gAKA"
   },
-  "urls": {
-    "http://localhost:8000": {
-      "jsapi_ticket": "sM4AOVdWfPE4DxkXGEs8VGnQel_wVaRPamfhHTb2RzcJj7i3yX4RoFBJOj-zcXuQo4SYgBoxGQNYd5_fU_gAKA",
-      "nonceStr": "m40qx3v3m1s",
-      "timestamp": "1590397892",
-      "url": "http://localhost:8000",
-      "signature": "4eaee3b932573515eb7cb471ffea43b82d638ac1",
-      "accessToken": "33_Z3QJghY30sLIDQIcyP6jssnevELZRSUUGJGq5afImfr1rVqdBmOHt0N5I1DGM0qaEfkBlHCV4tfTO8HDvQGfPbjLPJl7rQ0RPmQqQpTFnJhoUs1dfhK8kaBLUst_z068bjl7az2QOjH-KHkrBPSdAFARFI",
-      "signatureName": "http://localhost:8000",
-      "createDate": "2020-05-25T09:11:32.251Z",
-      "modifyDate": "2020-05-25T09:11:32.251Z",
-      "updated": true
-    }
-  },
+  "urls": {},
   "oauth": {},
   "card": {},
   "mp": {}
