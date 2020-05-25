@@ -20,7 +20,7 @@ router.get('/check', async (ctx) => {
   let res = await wx.jssdk.getSignature('http://localhost:8000')
   ctx.body = res
 })
-
+// 使用路遇
 app.use(router.routes())
 
 // 配置静态资源目录
