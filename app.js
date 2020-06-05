@@ -6,10 +6,10 @@ const Router = require('koa-router')
 const { Wechat } = require('wechat-jssdk')
 // 创建wechat验证实例：传入微信公众号测试appId和appSecret
 const wx = new Wechat({
-  // appId: 'wxe733093faa04b8aa',
-  // appSecret: '24f11b6815515016170c4ffeb6977e65'
-  appId: 'wx7cfd1bd1af42d511',
-  appSecret: '2fae9e51b3c6e89678db2ae74cf64bc3'
+  appId: 'wxe733093faa04b8aa',
+  appSecret: '24f11b6815515016170c4ffeb6977e65'
+  // appId: 'wx7cfd1bd1af42d511',
+  // appSecret: '2fae9e51b3c6e89678db2ae74cf64bc3'
 });
 
 // 创建Koa实例
