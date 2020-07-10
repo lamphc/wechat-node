@@ -10,17 +10,19 @@ const wx = new Wechat({
   appSecret: '24f11b6815515016170c4ffeb6977e65'
   // appId: 'wx7cfd1bd1af42d511',
   // appSecret: '2fae9e51b3c6e89678db2ae74cf64bc3'
-});
+})
 
 // 创建Koa实例
 const app = new Koa()
 // 创建路由实例
 const router = new Router()
 
-// 定义接口
+// 定义接口验证
 router.get('/check', async (ctx) => {
-  let res = await wx.jssdk.getSignature('http://localhost:3000/')
-  ctx.body = res
+  const res = await wx.jssdk.getSignature('http://localhost:3000/')
+  ctx.body = {}
+  ctx.body.message = '获取签名成功'
+  ctx.body.data = res
 })
 // 使用路由
 app.use(router.routes())
