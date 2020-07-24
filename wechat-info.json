@@ -3,25 +3,9 @@
     "store": "FileStore_/Users/mengwang/MengWork/Itcast/课程/微信小程序/04-code/gzh/wechat-info.json"
   },
   "globalToken": {
-    "count": 1,
-    "modifyDate": "2020-07-22T06:38:01.999Z",
-    "accessToken": "35_ODJdkrov-fngFX3rAwgRIxYk5SU48NAWSWQ7HXrFqjf4xO01oRYy5sGC3OP649ApDtG5NNeuvakWECsOFzlVv8LNOpA7wP-6tjfxQmDV46USdbIYCDLBORkh45gFjB7_i6ZAvlcubiOqScQZGMVaAIAPVE",
-    "jsapi_ticket": "sM4AOVdWfPE4DxkXGEs8VGnQel_wVaRPamfhHTb2RzfRQ-w2P7ZmQcZXVQk0CRBVqBlzWriPFkaTm-Cq3HdzMQ"
+    "count": 0
   },
-  "urls": {
-    "http://localhost:3000/": {
-      "jsapi_ticket": "sM4AOVdWfPE4DxkXGEs8VGnQel_wVaRPamfhHTb2RzfRQ-w2P7ZmQcZXVQk0CRBVqBlzWriPFkaTm-Cq3HdzMQ",
-      "nonceStr": "qhywmsd7vcr",
-      "timestamp": "1595399881",
-      "url": "http://localhost:3000/",
-      "signature": "8b7c13255a16221fb119375143fad29f278977a9",
-      "accessToken": "35_ODJdkrov-fngFX3rAwgRIxYk5SU48NAWSWQ7HXrFqjf4xO01oRYy5sGC3OP649ApDtG5NNeuvakWECsOFzlVv8LNOpA7wP-6tjfxQmDV46USdbIYCDLBORkh45gFjB7_i6ZAvlcubiOqScQZGMVaAIAPVE",
-      "signatureName": "http://localhost:3000/",
-      "createDate": "2020-07-22T06:38:02.000Z",
-      "modifyDate": "2020-07-22T06:38:02.000Z",
-      "updated": true
-    }
-  },
+  "urls": {},
   "oauth": {},
   "card": {},
   "mp": {}

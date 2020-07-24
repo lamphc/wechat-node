@@ -2,6 +2,7 @@ const Koa = require('koa')
 const views = require('koa-views')
 const staticRes = require('koa-static')
 const Router = require('koa-router')
+// const axios = require('axios')
 // 导入wechat-jssdk
 const { Wechat } = require('wechat-jssdk')
 // 创建wechat验证实例：传入微信公众号测试appId和appSecret
@@ -11,6 +12,12 @@ const wx = new Wechat({
   // appId: 'wx7cfd1bd1af42d511',
   // appSecret: '2fae9e51b3c6e89678db2ae74cf64bc3'
 })
+
+// node调用其它服务API获取数据
+// axios.get('http://api.douban.com/v2/movie/in_theaters?apikey=0df993c66c0c636e29ecbb5344252a4a').then((res) => {
+//   console.log('film:', res.data)
+// })
+
 
 // 创建Koa实例
 const app = new Koa()
