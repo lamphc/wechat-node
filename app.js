@@ -24,12 +24,15 @@ const app = new Koa()
 // 创建路由实例
 const router = new Router()
 
-// 定义接口验证
-router.get('/check', async (ctx) => {
-  const res = await wx.jssdk.getSignature('http://localhost:3000/')
-  ctx.body = {}
-  ctx.body.message = '获取签名成功'
-  ctx.body.data = res
+// 定义后台接口=》做js-sdk的签名验证
+router.get('/api/sign', async (ctx) => {
+  // 获取前台传递的params参数
+  // console.log(ctx.request.query)
+  let signUrl = ctx.request.query.signUrl || 'http://localhost:3000/'
+  // 获取授权数据，然后返回给前端
+  const res = await wx.jssdk.getSignature(signUrl)
+  // 返回response
+  ctx.body = { status: 200, msg: '获取签名数据成功！', data: res }
 })
 // 使用路由
 app.use(router.routes())
